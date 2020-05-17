@@ -15,5 +15,7 @@ def position_taken?(board, index)
 end
 
 def won?(board)
-
+  if top_row_win = true
+    return top_row_win
+  end
 end
