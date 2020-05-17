@@ -1,9 +1,4 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
-def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
-end
-
 WIN_COMBINATIONS = [
   [0,1,2], # Top row
   [3,4,5], # Middle row
@@ -14,3 +9,12 @@ WIN_COMBINATIONS = [
   [0,4,8], # Left diagonal
   [2,4,6]  # Right diagonal
 ]
+
+def position_taken?(board, index)
+  !(board[index].nil? || board[index] == " ")
+end
+
+def won?(board)
+
+end
+
