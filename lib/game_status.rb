@@ -1,13 +1,13 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 WIN_COMBINATIONS = [
-top_row_win = [0,1,2], # Top row
-middle_row_win = [3,4,5], # Middle row
-bottom_row_win = [6,7,8], # Bottom row
-left_column_win = [0,3,6], # Left column
-middle_column_win = [1,4,7], # Middle column
-right_column_win = [2,5,8], # Right column
-left_diagonal_win = [0,4,8], # Left diagonal
-right_diagonal_win = [2,4,6]  # Right diagonal
+[0,1,2], # Top row
+[3,4,5], # Middle row
+[6,7,8], # Bottom row
+[0,3,6], # Left column
+[1,4,7], # Middle column
+[2,5,8], # Right column
+[0,4,8], # Left diagonal
+[2,4,6]  # Right diagonal
 ]
 
 def position_taken?(board, index)
@@ -15,7 +15,23 @@ def position_taken?(board, index)
 end
 
 def won?(board)
-  if top_row_win == true
-    return top_row_win
+win_index_1 = WIN_COMBINATIONS[0]
+win_index_2 = WIN_COMBINATIONS[1]
+win_index_3 = WIN_COMBINATIONS[2]
+win_index_4 = WIN_COMBINATIONS[3]
+win_index_5 = WIN_COMBINATIONS[4]
+win_index_6 = WIN_COMBINATIONS[5]
+win_index_7 = WIN_COMBINATIONS[6]
+win_index_8 = WIN_COMBINATIONS[7]
+position_1 = board[win_index_1]
+position_2 = board[win_index_2]
+position_3 = board[win_index_3]
+position_4 = board[win_index_4]
+position_5 = board[win_index_5]
+position_6 = board[win_index_6]
+position_7 = board[win_index_7]
+position_8 = board[win_index_8]
+if win_index_1 = true
+  puts position_1
   end
 end
